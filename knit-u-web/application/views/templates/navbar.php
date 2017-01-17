@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -8,13 +8,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Start Bootstrap</a>
+                <a class="navbar-brand scrollTo" href="#about">Start Bootstrap</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
+                    <li class="active">
+                        <a href="#about" data-toggle="popover" data-placement="bottom" data-content="Content" >About</a>
                     </li>
                     <li>
                         <a href="#services">Services</a>
@@ -27,4 +27,5 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
+        <?php $this->load->view('templates/progressbar'); ?>
     </nav>

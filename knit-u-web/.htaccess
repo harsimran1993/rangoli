@@ -1,7 +1,9 @@
 <IfModule mod_rewrite.c>
   RewriteEngine on
-  RewriteBase /web/myweb/
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ index.php/$1 [NC,L,QSA]
+  RewriteBase /rangoli/knit-u-web/
+  RewriteCond $1 ^(application|system|private|logs)
+  RewriteRule ^(.*)$ index.php/access_denied/$1 [PT,L]
+  RewriteCond $1 ^(index\.php|robots\.txt|favicon\.ico|public|assets|css|js|images)
+  RewriteRule ^(.*)$ - [PT,L]
+  RewriteRule ^(.*)$ index.php/$1 [PT,L]
 </IfModule>
