@@ -1,1 +1,0 @@
-<a href="/web/myweb/about">about</a>
