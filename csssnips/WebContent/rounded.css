@@ -1,0 +1,68 @@
+#container {
+    -webkit-border-radius: 4px 3px 6px 10px;
+    -moz-border-radius: 4px 3px 6px 10px;
+    -o-border-radius: 4px 3px 6px 10px;
+    border-radius: 4px 3px 6px 10px;
+}
+ 
+/* alternative syntax broken into each line */
+#container {
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 10px;
+     
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 10px;
+}
+
+.round{
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px; /* future proofing */
+   -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+#Example_A {
+   height: 65px;
+   width:160px;
+   -moz-border-radius-bottomright: 50px;
+   border-bottom-right-radius: 50px;
+}
+
+#Example_B {
+   height: 65px;
+   width:160px;
+   -moz-border-radius-bottomright: 50px 25px;
+   border-bottom-right-radius: 50px 25px;
+}
+
+#Example_C {
+   height: 65px;
+   width:160px;
+   -moz-border-radius-bottomright: 25px 50px;
+   border-bottom-right-radius: 25px 50px;
+}
+
+#Example_D {
+   height: 5em;
+   width: 12em;
+   -moz-border-radius: 1em 4em 1em 4em;
+   border-radius: 1em 4em 1em 4em;
+}
+
+#Example_E {
+   height: 65px;
+   width:160px;
+   -moz-border-radius: 25px 10px / 10px 25px;
+   border-radius: 25px 10px / 10px 25px;
+}
+
+#Example_F {
+   height: 70px;
+   width: 70px;
+   -moz-border-radius: 35px;
+   border-radius: 35px;
+}

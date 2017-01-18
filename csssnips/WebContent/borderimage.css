@@ -1,0 +1,6 @@
+#border-image-style {
+   border-width:15px;
+   /* 3 types of border exist repeated, rounded or stretched (repeat / round / stretch) */
+   -moz-border-image:url(border.png) 30 30 stretch ;
+   -webkit-border-image:url(border.png) 30 30 stretch;
+}

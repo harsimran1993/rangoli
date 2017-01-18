@@ -1,0 +1,41 @@
+#resize-image {
+   /* Just imagine that the image_1.png is 200x400px */
+   background:url(image_1.png) top left no-repeat;
+   -moz-background-size: 100px 200px;
+   -o-background-size: 100px 200px;
+   -webkit-background-size: 100px 200px;
+}
+
+#multiple-images {
+   background: url(image_1.png) top left no-repeat,
+   url(image_2.png) bottom left no-repeat,
+   url(image_3.png) bottom right no-repeat;
+}
+//preload
+div.loader{
+   background:url(images/hover.gif) no-repeat;
+   background:url(images/hover2.gif) no-repeat;
+   background:url(images/hover3.gif) no-repeat;
+   margin-left:-10000px;
+}
+
+//flip
+img.flip {
+   -moz-transform: scaleX(-1);
+   -o-transform: scaleX(-1);
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+   filter: FlipH;
+   -ms-filter: "FlipH";
+}
+/*
+rotation
+ for firefox, safari, chrome, etc. 
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+
+ for ie 
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+opera 
+-o-transform: rotate(30deg);*/
